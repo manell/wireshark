@@ -1,6 +1,6 @@
 FROM ubuntu
 
 RUN apt-get update
-RUN apt-get install wireshark -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install wireshark -y
 
 CMD ["wireshark"]
